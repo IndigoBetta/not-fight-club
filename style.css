@@ -1,0 +1,250 @@
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+
+.game-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 500px;
+  margin: 50px auto;
+  background: #21263c;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(10,20,50,0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.navigation-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #4b83fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 30px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: -70px;
+  gap: 20px;
+  height: 100vh;           
+  box-sizing: border-box;  
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  gap: 15px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  fill: white;
+}
+.fight-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.avatar-hero, .avatar-enemy {
+  flex-shrink: 0;
+  width: 200px;
+  text-align: center;
+}
+
+.avatar-hero img, .avatar-enemy img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.lists-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 16px;
+}
+
+.divider {
+  width: 3px;
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.center-btn {
+  padding: 10px 32px;
+  font-size: 1.1em;
+  background: #4b83fc;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.choose-btn:hover {
+  background: #356bd9;
+}
+
+input[type="checkbox"].circle {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #888;
+  background: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"].circle:checked {
+  border-color: #4b83fc;
+}
+
+input[type="checkbox"].circle:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #4b83fc;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.left-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 16px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.left-list label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.left-list label input[type="checkbox"].circle {
+  order: 2;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.right-list label {
+  display: flex;
+  align-items: center;
+}
+
+
+.screen-character {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #23253c;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.main-character-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  gap: 24px;
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto;   
+}
+
+.main-character-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.character-details { flex: 1; }
+
+.avatar-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.avatar-option img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.avatar-option input:checked + img,
+.avatar-option:hover img {
+  border-color: #4b83fc;
+  transform: scale(1.07);
+}
+
+.choose-btn {
+  margin: 0 auto;
+  display: block;
+
+  padding: 10px 32px;
+  font-size: 1.1em;
+  background: #4b83fc;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: center;
+}
