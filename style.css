@@ -42,8 +42,19 @@
   align-items: center;     
   margin-top: -70px;
   gap: 20px;
-  height: 100vh;           
+  height: 700px;           
   box-sizing: border-box;  
+}
+
+.avatar-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: -70px;
+  gap: 20px;
+  height: 700px;           
+  box-sizing: border-box; 
 }
 
 .registration-form form {
@@ -62,10 +73,11 @@
 .fight-wrapper {
   width: 100%;
   max-width: 1200px;
+  height: 700px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -197,8 +209,9 @@ input[type="checkbox"].circle:checked::before {
 
 .main-character-info {
   display: flex;
-  align-items: center;
-  justify-content: space-between;  
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
   gap: 24px;
   width: 100%;
   max-width: 600px; 
@@ -206,8 +219,8 @@ input[type="checkbox"].circle:checked::before {
 }
 
 .main-character-img {
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -233,6 +246,11 @@ input[type="checkbox"].circle:checked::before {
 .avatar-option:hover img {
   border-color: #4b83fc;
   transform: scale(1.07);
+}
+
+.avatar-option.selected img {
+  border-color: #4b83fc;
+  box-shadow: 0 0 0 2px #4b83fc;
 }
 
 .choose-btn {

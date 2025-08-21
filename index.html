@@ -18,9 +18,9 @@
         </div>
     <div class="screen" id="screen-settings">
       <div class="registration-form">
-        <h1>Create Your Character</h1>
+        <h1>Имя героя</h1>
         <form action="/submit" method="post">
-          <label for="name">Character Name:</label>
+          <label for="name">Имя героя:</label>
           <input type="text" id="name" name="name" placeholder="Character Name" required>
           <input type="submit" value="Create Character" class="choose-btn">
         </form>
@@ -30,7 +30,6 @@
 <!--+++++++++++++++++++++++++++++++++++++++++START FIGHT++++++++++++++++++++++++++++++++++++++++-->
 
       <div class="screen" id="screen-fight-start">
-      
         <h4>Main</h4>
         <div class="registration-form">
           <button id="fight-btn" type="button" class="choose-btn">В бой!</button>
@@ -46,8 +45,8 @@
         <form class="fight-form">
             <div class="fight-wrapper">
               <div class="avatar-hero">
-                <h3>Name</h3>
-                <img class="hero" src="img/Leopold.jpg" alt="Hero">
+                <h3 class="fight-character-name"></h3>
+                <img class="hero-img-fight" src="img/Leopold.jpg" alt="Hero">
               </div>
               <div class="checkbox-container">
                 <div class="lists-row">
@@ -68,22 +67,27 @@
                   </div>
                 </div>
                 <button class="center-btn" type="submit">Атаковать!</button>
+                <div class="logs">
+                  <p>Герой атаковал Врага в голову, но Враг отразил удар.</p>
+                  <p>Враг атаковал Героя в грудь и нанёс 10 пунктов урона</p>
+                </div>
               </div>
 
               <div class="avatar-enemy">
-                <h3>Name</h3>
-                <img class="enemy" src="img/Karlson.jpg" alt="Enemy">
+                <h3 class="fight-enemy-name"></h3>
+                <img class="enemy-img-fight" src="" alt="Enemy">
               </div>
             </div>
         </form>
+
       </div>
 
 <!--+++++++++++++++++++++++++++++++++++++++++CHARACTER++++++++++++++++++++++++++++++++++++++++-->
 
-      <div class="screen" id="screen-character">
+    <div class="screen" id="screen-character">
        
       <h4>Character</h4>
-      <div class="registration-form">
+      <div class="avatar-choice">
           <div class="main-character-info">
           <img src="img/Leopold.jpg" class="main-character-img" alt="Главный персонаж">
           <div class="character-details">
@@ -93,7 +97,6 @@
             </div>
           </div>
         </div>
-
         <div class="avatar-choices">
           <h3>Выберите аватар:</h3>
           <div class="avatar-list">
@@ -110,10 +113,9 @@
               <img src="img/Buratino.jpg" alt="Аватар 3">
             </label>
           </div>
-          <button type="submit" class="choose-btn">Выбрать персонажа</button>
         </div>
       </div>
-      </div>
+  </div>
       <div class="screen" id="screen-edit-settings">
         <h4>Settings</h4>
       </div>
